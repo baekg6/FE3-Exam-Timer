@@ -13,29 +13,31 @@
             <img src="src/asset//weniv-logo.svg" alt="위니브" class="img-logo">
         </h1>
         <article class="cont-timer">
-            <h2 class="tit-timer">
-                <div class="cont-clock">
-                    <p>HRS</p>
-                    <div class="box-time">
-                        <p id="hrs">00</p>
-                    </div>
-                    <p>MIN</p>
-                    <div class="box-time">
-                        <p id="min">00</p>
-                    </div>
-                    <p>SEC</p>
-                    <div class="box-time">
-                        <p id="sec">00</p>
-                    </div>
+            <h2 class="tit-timer">TIMER</h2>
+            <div class="cont-clock">
+                <div class="time">
+                    <p class="box" id="hrs"><span>00</span></p>
+                    <p>hrs</p>
                 </div>
-                <div class="cont-btn">
-                    <button class="btn start disabled">start</button>
-                    <button class="btn reset disabled">reset</button>
+                <img src="src/asset/dot.svg" alt="">
+                <div class="time">
+                    <p class="box" id="min"><span>00</span></p>
+                    <p>min</p>
                 </div>
-            </h2>
+                <img src="src/asset/dot.svg" alt="">
+                <div class="time">
+                    <p class="box" id="sec"><span>00</span></p>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="cont-btn">
+                <button class="btn start disabled">
+                    <img src="src/asset/icon-start-disabled.svg" alt=""> start</button>
+                <button class="btn reset disabled"><img src="src/asset/icon-reset-disabled.svg" alt=""> reset</button>
+            </div>
         </article>
-        <footer>
-            <small>ⓒ WENIV Corp.</small>
+        <footer class="footer">
+            <small class="copyright">ⓒ WENIV Corp.</small>
         </footer>
     </div>
     <script src="src/javascript/index.js"></script>

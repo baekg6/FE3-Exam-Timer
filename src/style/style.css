@@ -1,0 +1,196 @@
+@charset "utf-8";
+@import "reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/* utils */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%);
+}
+
+#app,
+button {
+    font-family: "Pretendard-Regular";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* 버튼 스타일 */
+.btn {
+    width: 112px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 50px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+.btn.start {
+    background: #5180ff;
+}
+.btn.pause {
+    background: #15c2b8;
+}
+.btn.reset {
+    background: #fb7099;
+}
+.btn.disabled {
+    background: #324577;
+    color: #617199;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.box {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+}
+.box:before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 16px;
+    height: 1px;
+    background: #354971;
+}
+.box:after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 16px;
+    height: 1px;
+    background: #354971;
+}
+.box p {
+    position: relative;
+    padding: 16px 14px 16px 13px;
+    z-index: 10;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    margin: 24px;
+}
+
+/* 로고 */
+.tit-logo {
+    width: 244px;
+    height: 48px;
+    margin: 72px auto 60px;
+}
+
+.tit-logo .img-logo {
+    width: 100%;
+}
+/* //로고 */
+
+/* 타이머 */
+.cont-timer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+}
+
+.cont-timer .tit-timer {
+    position: relative;
+    margin: 48px 44px 32px;
+    padding-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-bottom: 1px solid #3d538a;
+}
+.cont-timer .cont-clock p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #a5b6ee;
+}
+
+.cont-timer .cont-clock {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cont-clock .time {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4px;
+}
+
+.cont-clock > img {
+    position: relative;
+    top: 10px;
+}
+
+.cont-clock .time .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+}
+.cont-clock .time .box span {
+    position: relative;
+    top: 4px;
+    z-index: 10;
+}
+
+.cont-timer .cont-btn {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* 푸터 */
+.footer .copyright {
+    display: block;
+    margin: 60px auto 103px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8596bf;
+}
+/* //푸터 */
