@@ -26,9 +26,9 @@ minutes.addEventListener("click", (e) => {
     minutes.innerHTML = `<span>${String(min).padStart(2, "0")}</span>`;
 });
 seconds.addEventListener("click", (e) => {
-    second += 10;
-    if (second > 59) {
-        second = 0;
+    sec += 10;
+    if (sec > 59) {
+        sec = 0;
     }
-    seconds.innerHTML = `<span>${String(second).padStart(2, "0")}</span>`;
+    seconds.innerHTML = `<span>${String(sec).padStart(2, "0")}</span>`;
 });
