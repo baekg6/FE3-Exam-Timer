@@ -63,6 +63,8 @@ button {
     background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
     border: 1px solid #354971;
     border-radius: 4px;
+
+    cursor: pointer;
 }
 .box:before {
     content: "";
